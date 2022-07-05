@@ -1,11 +1,11 @@
 #include <main.h>
 
 /**
- * main - Entry point
+ * main.h - Entry point
  *
  * Return: Always 0 (success)
  */
-int main(void)
+int main.h(void)
 {
 	char *sh = "Holberton";
 
