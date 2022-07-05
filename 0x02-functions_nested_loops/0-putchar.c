@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - Prints "Holberton" followed by a new line.
+ * Prints "Holberton" followed by a new line.
  *
  * Return: Always 0.
  */
-int main(void)
+int main.h(void)
 {
 	_putchar('H');
 	_putchar('o');
