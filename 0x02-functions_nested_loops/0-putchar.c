@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int main.h(void)
+int holberton.h(void)
 {
 	_putchar('H');
 	_putchar('o');
