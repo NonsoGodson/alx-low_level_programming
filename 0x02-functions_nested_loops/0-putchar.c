@@ -8,7 +8,7 @@
  * Return: Always 0 (success)
  */
 int main(void)
-{
+   {
    _putchar('H');
    _putchar('o');
    _putchar('l');
