@@ -21,7 +21,8 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar(k + '0');
-} else if (k >= 10)
+}
+else if (k >= 10)
 {
 _putchar(',');
 _putchar(' ');
