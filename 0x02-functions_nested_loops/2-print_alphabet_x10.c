@@ -1,19 +1,21 @@
-
 #include "main.h"
 /**
- * print_alphabet_x10 - function to print abc 10 times.
- * Return: 0
+ * print_alphabet_x10 - print lowercase alphabet
+ *
+ * Return:0 Always (SUCCESS)
+ *
  */
 void print_alphabet_x10(void)
 {
-	char c, i;
-:wq
-	for (i = 0; i <= 9; i++)
+	int a, i;
+
+	for (a = 0; a <= 9; a++)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		for (i = 97; i <= 122; i++)
 		{
-			_putchar(c);
+			_putchar(i);
 		}
-		_putchar('\n');:
+/* using ASCII values in the code above*/
+	_putchar('\n');
 	}
 }
