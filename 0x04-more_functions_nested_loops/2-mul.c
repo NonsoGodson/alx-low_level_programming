@@ -6,7 +6,7 @@
  * @a - variable
  * @b - variable
  *
- * Return: a * b
+ * Return: (a * b)
  */
 int mul(int a,int b)
 {
