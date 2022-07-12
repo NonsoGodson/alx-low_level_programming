@@ -8,16 +8,16 @@
 
 void print_rev(char *x)
 {
-	int i = 0; 	
-	while (x[i] != '\0')	
-	{		
-		i++;
-	}
-	i--;
-	while (i >= 0)
-	{		
-		_putchar(x[i]);
-		i--;
-	}
-	_putchar('\n');
+int i = 0; 	
+while (x[i] != '\0')	
+{		
+i++;
+}
+i--;
+while (i >= 0)
+{		
+_putchar(x[i]);
+i--i;
+}
+_putchar('\n');
 }
