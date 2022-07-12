@@ -9,4 +9,4 @@
 void reset_to_98(int *q)
 {
 	*q = 98;
-i}
+}
