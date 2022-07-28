@@ -26,11 +26,11 @@ int find_len(char *str)
 
 /**
  * create_xarray - Creates an array of chars and initializes it with
- *                 the character 'x'. Adds a terminating null byte.
+ * the character 'x'. Adds a terminating null byte.
  * @size: The size of the array to be initialized.
  *
  * Description: If there is insufficient space, the
- *              function exits with a status of 98.
+ * function exits with a status of 98.
  * Return: A pointer to the array.
  */
 char *create_xarray(int size)
@@ -53,7 +53,7 @@ char *create_xarray(int size)
 
 /**
  * iterate_zeroes - Iterates through a string of numbers containing
- *                  leading zeroes until it hits a non-zero number.
+ * leading zeroes until it hits a non-zero number.
  * @str: The string of numbers to be iterate through.
  *
  * Return: A pointer to the next non-zero element.
@@ -71,7 +71,7 @@ char *iterate_zeroes(char *str)
  * @c: The character to be converted.
  *
  * Description: If c is a non-digit, the function
- *              exits with a status of 98.
+ * exits with a status of 98.
  * Return: The converted int.
  */
 int get_digit(char c)
@@ -95,7 +95,7 @@ int get_digit(char c)
  * @zeroes: The necessary number of leading zeroes.
  *
  * Description: If mult contains a non-digit, the function
- *              exits with a status value of 98.
+ * exits with a status value of 98.
  */
 void get_prod(char *prod, char *mult, int digit, int zeroes)
 {
@@ -118,7 +118,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		prod--;
 	}
 
-for (; mult_len >= 0; mult_len--, mult--, prod--)
+	for (; mult_len >= 0; mult_len--, mult--, prod--)
 	{
 		if (*mult < '0' || *mult > '9')
 		{
@@ -154,7 +154,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 
 	for (; *final_prod != 'x'; final_prod--)
 	{
-num = (*final_prod - '0') + (*next_prod - '0');
+		num = (*final_prod - '0') + (*next_prod - '0');
 		num += tens;
 		*final_prod = (num % 10) + '0';
 		tens = num / 10;
@@ -162,7 +162,8 @@ num = (*final_prod - '0') + (*next_prod - '0');
 		next_prod--;
 		next_len--;
 	}
-for (; next_len >= 0 && *next_prod != 'x'; next_len--)
+
+	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
 	{
 		num = (*next_prod - '0');
 		num += tens;
@@ -183,7 +184,7 @@ for (; next_len >= 0 && *next_prod != 'x'; next_len--)
  * @argc: An array of pointers to the arguments.
  *
  * Description: If the number of arguments is incorrect or one number
- *              contains non-digits, the function exits with a status of 98.
+ * contains non-digits, the function exits with a status of 98.
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
@@ -211,11 +212,11 @@ int main(int argc, char *argv[])
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
 
-for (index = find_len(argv[2]) - 1; index >= 0; index--)
+	for (index = find_len(argv[2]) - 1; index >= 0; index--)
 	{
-	digit = get_digit(*(argv[2] + index));
-get_prod(next_prod, argv[1], digit, zeroes++);
-	add_nums(final_prod, next_prod, size - 1);
+		digit = get_digit(*(argv[2] + index));
+		get_prod(next_prod, argv[1], digit, zeroes++);
+		add_nums(final_prod, next_prod, size - 1);
 	}
 	for (index = 0; final_prod[index]; index++)
 	{
