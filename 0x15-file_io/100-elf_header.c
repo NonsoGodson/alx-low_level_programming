@@ -1,3 +1,7 @@
+/*
+ * File: 100-elf_header.c
+ * Auth: Nonso O Godson
+ */
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
