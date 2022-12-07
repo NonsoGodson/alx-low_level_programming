@@ -1,4 +1,2 @@
-all: build_executable
-
-build_executable:
-	gcc main.c holberton.c -o holberton
+all: main.c school.c
+	gcc main.c school.c -o school
